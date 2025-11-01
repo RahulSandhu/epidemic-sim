@@ -49,6 +49,6 @@ of a disease using the **SIR**, **SIS**, and **SEIR** models.
 - **Data Tooltips:** Hover over the plotlines to see the exact values for a
   given day.
 
-!(./images/demo.png)
+![Application demo](./images/demo.png)
 
 </div>
