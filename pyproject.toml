@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epidemic-sim"
+version = "0.1.0"
+authors = [
+    { name = "Ravneet-Rahul Sandhu Singh", email = "rahulsandhu542001@gmail.com" },
+]
+description = "An interactive GUI for simulating SIR, SIS, and SEIR epidemic models."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "PyQt6",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]  
+
+[project.gui-scripts]
+epidemic-modeler = "main:main"
